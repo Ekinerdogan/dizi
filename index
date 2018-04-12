@@ -1,9 +1,16 @@
-<!DOCTYPE html>
-<HTML>
-<HEAD> <TITLE>Activity - Insert animated GIF to HTML</TITLE>
-<link rel="stylesheet"type="text/css" href="css"></HEAD>
+<!DOCTYPE>
+<html>
+<HEAD>
+<TITLE>gif</TITLE>
+<link rel="stylesheet"type="text/css" href="css">
+</HEAD>
 <BODY>
-
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
 <button class="btn success">Success</button>
 <button class="btn info">Info</button>
 <button class="btn warning">Warning</button>
@@ -44,4 +51,4 @@
     </div>
   </form>
 </BODY>
-</HTML>
+</html>
