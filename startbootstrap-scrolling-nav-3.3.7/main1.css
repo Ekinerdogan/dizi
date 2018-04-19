@@ -1,0 +1,174 @@
+body{background: linear-gradient(black, #FFC6DC);}
+
+
+.container {
+ position: relative;
+}
+
+.mySlides {
+ display: none;
+}
+
+.cursor {
+ cursor: pointer;
+}
+
+.prev,
+.next {
+ cursor: pointer;
+ position: absolute;
+ top: 40%;
+ width: auto;
+ padding: 16px;
+ margin-top: -50px;
+ color: white;
+ font-weight: bold;
+ font-size: 20px;
+ border-radius: 0 3px 3px 0;
+ user-select: none;
+ -webkit-user-select: none;
+}
+
+.next {
+ right: 0;
+ border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+ background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+ color: #f2f2f2;
+ font-size: 12px;
+ padding: 8px 12px;
+ position: absolute;
+ top: 0;
+}
+
+.caption-container {
+ text-align: center;
+ background-color: #222;
+ padding: 2px 16px;
+ color: white;
+}
+
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+.column {
+ float: left;
+ width: 16.66%;
+}
+
+.demo {
+ opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+ opacity: 1;
+}
+
+
+  }
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #ddd;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #380016;
+    color: black;
+}
+
+.topnav a.active {
+
+    color: white;
+}
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn:hover {background: #eee;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #380016;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
