@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD> <TITLE>dizi</TITLE>
+
+      <link href='css_boot/bootstrap.css' rel='stylesheet'>
+<link rel="stylesheet"type="text/css" href="css"></HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery-3.3.1.min.js"></script>
+<BODY>
+  <div class="topnav">
+    <a class="active" href="index.html">FANTASTIK</a>
+    <a href="#news">BILIM KURGU</a>
+    <a href="#contact">AKSIYON</a>
+    <a href="#about">SUC</a>
+      <a href="#A">ANIME</a>
+        <a href="#GE">GENCLIK</a>
+          <a href="#KO">KORKU</a>
+            <a href="#G">GERILIM</a>
+              <a href="#R">ROMANTIK</a>
+                <a href="#K">KOMEDI</a>
+
+  </div>
+
+
+  <button  onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'"
+  class="close" title="Close Modal">&times;</span>
+
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <img  class="img-circle"src="images.jpg" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  </div>
+
+    <script>
+
+  var modal = document.getElementById('id01');
+
+
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+
+<div class="container">
+
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="dark.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="game.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="black.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="how.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="la-casa.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="suits.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="strangerthings.jpg" style="width:100%">
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="dark.jpg" style="width:100%" onclick="currentSlide(1)" alt="DARK">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="game.jpg" style="width:100%" onclick="currentSlide(2)" alt="GAME OF THRONES">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="black.jpg" style="width:100%" onclick="currentSlide(3)" alt="BLACK MIRROR">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="how.jpg" style="width:100%" onclick="currentSlide(4)" alt="HOW TO GET AWAY WİTH MURDER ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="la-casa.jpg" style="width:100%" onclick="currentSlide(5)" alt="LA CASA DE PAPEL">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="suits.jpg" style="width:100%" onclick="currentSlide(6)" alt="SUITS">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="strangerthings.jpg" style="width:100%" onclick="currentSlide(6)" alt="STRANGER THINGS">
+    </div>
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+
+
+
+</BODY>
+</HTML>
