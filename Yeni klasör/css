@@ -115,12 +115,12 @@ body{
 
 .btn:hover {background: #eee;
 }
-/* Bordered form */
+
 form {
     border: 3px solid #f1f1f1;
 }
 
-/* Full-width inputs */
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -130,9 +130,8 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
+    background-color: #E39E9E;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
